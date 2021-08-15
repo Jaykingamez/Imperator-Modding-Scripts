@@ -1,4 +1,4 @@
-# 206
+# #206
 
 ### Commenting of country names beside their tags
 
@@ -12,7 +12,7 @@ tag_to_country_comment.py will use the dictionary and add comments containing th
 1. First Iteration adds comments,
 2. Second Iteration formats it properly
 
-# 212 
+# #212 
 
 ### Sorting coat of arms in an alphabetical order
 
