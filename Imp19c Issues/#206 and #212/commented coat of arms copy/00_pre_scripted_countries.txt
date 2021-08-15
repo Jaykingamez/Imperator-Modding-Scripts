@@ -156,7 +156,7 @@ ASK = { #asaki-waki
 	}
 }
 
-LFP = { #free
+LFP = { #league of the free peoples
 	pattern = "pattern_solid.tga"
 	color1 = "etruscan_blue"
 	color2 = "roman_red"
@@ -216,7 +216,7 @@ MRI = { #morea
 	}
 }
 
-MLB = { #mount
+MLB = { #mount lebanon
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "pure_white"
@@ -2151,7 +2151,7 @@ CLO = { # Chiloé shares the flag of Peru #chiloe
 	}
 }
 
-CHR = { #Flag of Spanish Charcas #day
+CHR = { #Flag of Spanish Charcas #charcas
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "roman_red"
@@ -2260,7 +2260,7 @@ LHJ = { #lahej
 	}
 }
 
-DHN ={ #dhanwar
+DHN = { #dhanwar
 	pattern = "pattern_vertical_split_01.tga"
 	color1 = "ck2_green"
 	color2 = "bharatavarsha_orange_color"
@@ -2554,7 +2554,7 @@ BRG = { #braunschweig
 	color2 = "roman_gold"
 }
 
-BRE ={ #bremen
+BRE = { #bremen
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2563,7 +2563,7 @@ BRE ={ #bremen
 	}
 }
 
-HAM ={ #hamburg
+HAM = { #hamburg
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2572,7 +2572,7 @@ HAM ={ #hamburg
 	}
 }
 
-HAN ={ #hannover
+HAN = { #hannover
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2581,7 +2581,7 @@ HAN ={ #hannover
 	}
 }
 
-HSD ={ #hesse-darmstadt
+HSD = { #hesse-darmstadt
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2695,7 +2695,7 @@ NED = { #netherlands
 	color3 = "ck2_blue"
 }
 
-DEI = { #east
+DEI = { #dutch east indies
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "pure_white"
@@ -2732,7 +2732,7 @@ SWM = { #saxe-weimar
 	color3 = "roman_gold"
 }
 
-FRK ={ #frankfurt
+FRK = { #frankfurt
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2741,7 +2741,7 @@ FRK ={ #frankfurt
 	}
 }
 
-SWI ={ #switzerland
+SWI = { #switzerland
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "bone_white"
@@ -2750,7 +2750,7 @@ SWI ={ #switzerland
 	}
 }
 
-SAR ={ #sardinia
+SAR = { #sardinia
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "roman_red"
@@ -2759,13 +2759,13 @@ SAR ={ #sardinia
 	}
 }
 
-PRM ={ # Habsburg flag of Parma #parma
+PRM = { # Habsburg flag of Parma #parma
 	pattern = "pattern_vertical_split_01.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
 }
 
-MOD ={ # Habsburg flag of Modena #modena
+MOD = { # Habsburg flag of Modena #modena
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "ck2_blue"
@@ -2774,13 +2774,13 @@ MOD ={ # Habsburg flag of Modena #modena
 	}
 }
 
-LUC ={ # Flag before coat of arms was added in 1818 #lucca
+LUC = { # Flag before coat of arms was added in 1818 #lucca
 	pattern = "pattern_vertical_split_01.tga"
 	color1 = "roman_gold"
 	color2 = "roman_red"
 }
 
-TUS ={ #tuscany
+TUS = { #tuscany
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2789,7 +2789,7 @@ TUS ={ #tuscany
 	}
 }
 
-LBV ={ #lombardy_venetia
+LBV = { #lombardy_venetia
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_yellow"
 	color2 = "pitch_black"
@@ -2798,13 +2798,13 @@ LBV ={ #lombardy_venetia
 	}
 }
 
-PAP ={ #papal_states
+PAP = { #papal_states
 	pattern = "pattern_vertical_split_01.tga"
 	color1 = "roman_gold"
 	color2 = "pure_white"
 }
 
-SSL ={ #two_sicilies
+SSL = { #two_sicilies
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "roman_red"
@@ -2813,7 +2813,7 @@ SSL ={ #two_sicilies
 	}
 }
 
-NAP ={ #naples
+NAP = { #naples
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "roman_red"
@@ -2822,7 +2822,7 @@ NAP ={ #naples
 	}
 }
 
-SIC ={ #sicily
+SIC = { #sicily
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_red"
@@ -2831,7 +2831,7 @@ SIC ={ #sicily
 	}
 }
 
-POL ={ #poland
+POL = { #poland
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2846,7 +2846,7 @@ POZ = { #poznan
 	color2 = "pure_white"
 }
 
-POR ={ #portugal
+POR = { #portugal
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "ck2_blue"
@@ -2861,7 +2861,7 @@ LBG = { #lauenburg
 	color2 = "ck2_yellow"
 }
 
-HOL ={ #holstein
+HOL = { #holstein
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2882,7 +2882,7 @@ SHL = { #schleswig
 	color2 = "ck2_yellow"
 }
 
-DEN ={ #denmark
+DEN = { #denmark
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2891,7 +2891,7 @@ DEN ={ #denmark
 	}
 }
 
-SWE ={ #sweden
+SWE = { #sweden
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "ck2_yellow"
@@ -2900,7 +2900,7 @@ SWE ={ #sweden
 	}
 }
 
-NOR ={ #norway
+NOR = { #norway
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "roman_red"
@@ -2909,7 +2909,7 @@ NOR ={ #norway
 	}
 }
 
-MOL ={ #moldavia
+MOL = { #moldavia
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2918,7 +2918,7 @@ MOL ={ #moldavia
 	}
 }
 
-WAL ={ #wallachia
+WAL = { #wallachia
 	pattern = "pattern_solid.tga"
 	color1 = "ocean_blue"
 	color2 = "pure_white"
@@ -2927,7 +2927,7 @@ WAL ={ #wallachia
 	}
 }
 
-SRB ={ #serbia
+SRB = { #serbia
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -2936,7 +2936,7 @@ SRB ={ #serbia
 	}
 }
 
-ION ={ #ionian_isles
+ION = { #ionian_isles
 	pattern = "pattern_solid.tga"
 	color1 = "ocean_blue"
 	color2 = "roman_red"
@@ -2945,7 +2945,7 @@ ION ={ #ionian_isles
 	}
 }
 
-MNR ={ #montenegro
+MNR = { #montenegro
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "roman_red"
@@ -2954,7 +2954,7 @@ MNR ={ #montenegro
 	}
 }
 
-MNR ={ #montenegro
+MNR = { #montenegro
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "roman_red"
@@ -2963,7 +2963,7 @@ MNR ={ #montenegro
 	}
 }
 
-LUX ={ #luxemburg
+LUX = { #luxemburg
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "ck2_blue"
@@ -2972,7 +2972,7 @@ LUX ={ #luxemburg
 	}
 }
 
-DRY ={ #diryah
+DRY = { #diryah
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_green"
 	color2 = "bone_white"
@@ -2981,7 +2981,7 @@ DRY ={ #diryah
 	}
 }
 
-ALG ={ #algiers
+ALG = { #algiers
 	pattern = "pattern_solid.tga"
 	color1 = "phrygia_yellow"
 	color2 = "ck2_green"
@@ -2990,7 +2990,7 @@ ALG ={ #algiers
 	}
 }
 
-TUN ={ #tunis
+TUN = { #tunis
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "ck2_blue"
@@ -2999,7 +2999,7 @@ TUN ={ #tunis
 	}
 }
 
-EGY ={ #egypt
+EGY = { #egypt
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -3008,7 +3008,7 @@ EGY ={ #egypt
 	}
 }
 
-MOR ={ #morocco
+MOR = { #morocco
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -3017,7 +3017,7 @@ MOR ={ #morocco
 	}
 }
 
-TRI ={ #tripoli
+TRI = { #tripoli
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -3026,7 +3026,7 @@ TRI ={ #tripoli
 	}
 }
 
-BUR ={ #burma
+BUR = { #burma
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -3035,13 +3035,13 @@ BUR ={ #burma
 	}
 }
 
-BRU ={ #brunei
+BRU = { #brunei
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
 }
 
-SLU ={ #sulu
+SLU = { #sulu
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_purple"
 	color2 = "pure_white"
@@ -3050,7 +3050,7 @@ SLU ={ #sulu
 	}
 }
 
-LAF ={ #lanfang
+LAF = { #lanfang
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
 	color2 = "pure_white"
@@ -3059,7 +3059,7 @@ LAF ={ #lanfang
 	}
 }
 
-SIA ={ #siam
+SIA = { #siam
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "pure_white"
@@ -3068,13 +3068,13 @@ SIA ={ #siam
 	}
 }
 
-KDH ={ #kedah
+KDH = { #kedah
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
 }
 
-VIE ={ #vietnam
+VIE = { #vietnam
 	pattern = "pattern_circle_02.dds"
 	color1 = "roman_gold"
 	color2 = "roman_red"
@@ -3083,7 +3083,7 @@ VIE ={ #vietnam
 	}
 }
 
-KOR ={ #korea
+KOR = { #korea
 	pattern = "pattern_circle_02.dds"
 	color1 = "roman_gold"
 	color2 = "roman_red"
@@ -3091,7 +3091,7 @@ KOR ={ #korea
 		texture = "te_KOR.dds"
 	}
 }
-VIN ={ #vientiane
+VIN = { #vientiane
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "pure_white"
@@ -3100,14 +3100,14 @@ VIN ={ #vientiane
 	}
 }
 
-STL ={ # Identical to KDH... #setul
+STL = { # Identical to KDH... #setul
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
 }
 
 
-CPK ={ #champasak
+CPK = { #champasak
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "pure_white"
@@ -3116,7 +3116,7 @@ CPK ={ #champasak
 	}
 }
 
-CBI ={ #cambodia
+CBI = { #cambodia
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_green"
 	color2 = "ck2_green"
@@ -3125,19 +3125,19 @@ CBI ={ #cambodia
 	}
 }
 
-LWU ={ #luwu
+LWU = { #luwu
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_green"
 	color2 = "ck2_green"
 }
 
-BJR ={ #banjar
+BJR = { #banjar
 	pattern = "pattern_horizontal_split_01.tga"
 	color1 = "roman_gold"
 	color2 = "pitch_black"
 }
 
-RYU ={ #ryukyu
+RYU = { #ryukyu
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "pure_white"
@@ -3146,13 +3146,13 @@ RYU ={ #ryukyu
 	}
 } 
 
-MSC ={ #muscat
+MSC = { #muscat
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
 }
 
-OMA ={ #oman
+OMA = { #oman
 	pattern = "pattern_solid.tga"
 	color1 = "pure_white"
 	color2 = "pure_white"
@@ -3161,7 +3161,7 @@ OMA ={ #oman
 	}
 } 
 
-TKG ={ #tokugawa
+TKG = { #tokugawa
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_purple"
 	color2 = "roman_gold"
@@ -3170,7 +3170,7 @@ TKG ={ #tokugawa
 	}
 } 
 
-SHZ ={ #shimazu
+SHZ = { #shimazu
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "ck2_blue"
@@ -3179,7 +3179,7 @@ SHZ ={ #shimazu
 	}
 } 
 
-DTE ={ #date
+DTE = { #date
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3188,7 +3188,7 @@ DTE ={ #date
 	}
 } 
 
-SGA ={ #saga
+SGA = { #saga
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
@@ -3197,7 +3197,7 @@ SGA ={ #saga
 	}
 } 
 
-MED ={ #maeda
+MED = { #maeda
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3225,7 +3225,7 @@ ASN = { #asano
 	}
 } 
 
-MAE ={ #matsunae
+MAE = { #matsunae
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3234,13 +3234,13 @@ MAE ={ #matsunae
 	}
 } 
 
-SAM ={ #sambas
+SAM = { #sambas
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
 }
 
-HJI ={ #himeji
+HJI = { #himeji
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_green"
 	color2 = "ck2_green"
@@ -3249,7 +3249,7 @@ HJI ={ #himeji
 	}
 } 
 
-AZU ={ #aizu
+AZU = { #aizu
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3258,7 +3258,7 @@ AZU ={ #aizu
 	}
 } 
 
-CSU ={ #choshu
+CSU = { #choshu
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3267,7 +3267,7 @@ CSU ={ #choshu
 	}
 } 
 
-IWM ={ #iwami
+IWM = { #iwami
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3276,7 +3276,7 @@ IWM ={ #iwami
 	}
 } 
 
-ECH ={ #echizen
+ECH = { #echizen
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_blue"
 	color2 = "ck2_blue"
@@ -3285,7 +3285,7 @@ ECH ={ #echizen
 	}
 } 
 
-TGU ={ #tsugaru
+TGU = { #tsugaru
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3294,7 +3294,7 @@ TGU ={ #tsugaru
 	}
 } 
 
-SNI ={ #shonai
+SNI = { #shonai
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3303,7 +3303,7 @@ SNI ={ #shonai
 	}
 } 
 
-MLK ={ #mamluks
+MLK = { #mamluks
 	pattern = "pattern_solid.tga"
 	color1 = "phrygia_yellow"
 	color2 = "phrygia_yellow"
@@ -3312,13 +3312,13 @@ MLK ={ #mamluks
 	}
 } 
 
-OGD ={ #ogaden
+OGD = { #ogaden
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
 } 
 
-SNR ={ #sennar
+SNR = { #sennar
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3327,7 +3327,7 @@ SNR ={ #sennar
 	}
 } 
 
-#MDB ={
+#MDB = { #medri bahri
 #	pattern = "pattern_solid.tga"
 #	color1 = "bone_white"
 #	color2 = "bone_white"
@@ -3336,19 +3336,19 @@ SNR ={ #sennar
 #	}
 #} 
 
-KWT ={ #kuwait
+KWT = { #kuwait
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
 }
 
-ASA ={ #aussa
+ASA = { #aussa
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
 }
 
-MEE ={ #majeerteen
+MEE = { #majeerteen
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_red"
@@ -3357,7 +3357,7 @@ MEE ={ #majeerteen
 	}
 } 
 
-SCU ={ #scutari
+SCU = { #scutari
 	pattern = "pattern_solid.tga"
 	color1 = "bharatavarsha_orange_color"
 	color2 = "bone_white"
@@ -3366,7 +3366,7 @@ SCU ={ #scutari
 	}
 } 
 
-NEU ={ #neuchatel
+NEU = { #neuchatel
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "bone_white"
@@ -3375,7 +3375,7 @@ NEU ={ #neuchatel
 	}
 } 
 
-DIN ={ #dinetah
+DIN = { #dinetah
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "bone_white"
@@ -3383,7 +3383,7 @@ DIN ={ #dinetah
 		texture = "te_DIN.dds"
 	}
 } 
-APA ={ #apacheria
+APA = { #apacheria
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_gold"
@@ -3391,7 +3391,7 @@ APA ={ #apacheria
 		texture = "te_APA.dds"
 	}
 } 
-AIN ={ #ainu
+AIN = { #ainu
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_gold"
@@ -3399,7 +3399,7 @@ AIN ={ #ainu
 		texture = "te_AIN.dds"
 	}
 }
-YNK ={ #yankton
+YNK = { #yankton
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_gold"
@@ -3407,7 +3407,7 @@ YNK ={ #yankton
 		texture = "te_YNK.dds"
 	}
 }
-CHY ={ #cheyenne
+CHY = { #cheyenne
 	pattern = "pattern_solid.tga"
 	color1 = "roman_red"
 	color2 = "roman_gold"
@@ -3415,7 +3415,7 @@ CHY ={ #cheyenne
 		texture = "te_CHY.dds"
 	}
 } 
-UWA ={ #uwajima
+UWA = { #uwajima
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "roman_gold"
@@ -3423,7 +3423,7 @@ UWA ={ #uwajima
 		texture = "te_UWA.dds"
 	}
 }
-IWM ={ #iwami
+IWM = { #iwami
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3431,7 +3431,7 @@ IWM ={ #iwami
 		texture = "te_IWM.dds"
 	}
 }
-FUK ={ #fukuoka
+FUK = { #fukuoka
 	pattern = "pattern_solid.tga"
 	color1 = "bone_white"
 	color2 = "bone_white"
@@ -3439,7 +3439,7 @@ FUK ={ #fukuoka
 		texture = "te_FUK.dds"
 	}
 }
-HKW ={ #hosokawa
+HKW = { #hosokawa
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "bone_white"
@@ -3447,7 +3447,7 @@ HKW ={ #hosokawa
 		texture = "te_HKW.dds"
 	}
 }
-BGO ={ #bungo
+BGO = { #bungo
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "bone_white"
@@ -3455,7 +3455,7 @@ BGO ={ #bungo
 		texture = "te_BGO.dds"
 	}
 }
-NTO ={ #naito
+NTO = { #naito
 	pattern = "pattern_solid.tga"
 	color1 = "roman_gold"
 	color2 = "bone_white"

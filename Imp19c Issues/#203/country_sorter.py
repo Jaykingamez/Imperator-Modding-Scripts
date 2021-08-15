@@ -13,6 +13,7 @@ with open("countries.txt", "w",  encoding='utf-8') as countries:
                 countries.write(tag);
             countries.write(country)
             region = []
+    region.sort()
     for tag in region: # if there are leftovers (for Polynesia)
             countries.write(tag);
     
