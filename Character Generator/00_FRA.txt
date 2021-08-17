@@ -1,0 +1,19 @@
+"FRA"{=
+	country="FRA"
+	3={
+		first_name="Charles Maurice"
+		family_name="Talleyrand-Périgord"
+		birth_date=1754.2.2
+		culture="French"
+		religion="Catholic"
+		no_stats=yes
+		no_traits=yes
+		add_gold=100
+		add_popularity=50
+		c:FRA={
+			set_as_ruler=char:3
+		}
+		dna="VTpLzv8ty31ek16TAgACbwGAAWYClwKIBLECiQRgAncACgJwAn8CfwJ9An0BUwFTAkQCbwKUApQCoAJ0AUkBTwKqApgDlgKIAv8CeQPgA7ICZAKKAo4CjgOMAn0AtwBlAs8CjAJWApkCXgKFAskCdQKVApUClgKWBMMEwwAnACcCjgKOAnIClgKEAo0C+QKMBK4E0gL/AnQCaAJpAo0CkwJzAnMCmwKDApgCmAKEAoQCaQJpAoUChQFbAVsCjQKNApYClgK/AmYCfwJ/AnoCegI6AmYCWQJxAowCjwKMAngCjwKPAmwCbACvAnkAAABJAREBEQBZAPMBagFqAO4A7gEUARQAAABQAHwAfAAAAHkCvAB9Af8BGQB/AH8APQA9ANIA0gFJAUkBTgFOAGIAYgBqAGoCUQJRAQkBCQB/AH8AvQC9AJcA5ABeAF4AmgCaAPUA9QClAKUCzwLPAGAAYAAsACwAsQCxAEIAQgK4ArgMugxlAH8AfwPDA/UMAAH1AEMAQwHYCdgG4QHWBF4AVwAAAAAAAAAAAAEAAA=="
+	}
+
+}

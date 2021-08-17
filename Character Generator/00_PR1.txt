@@ -1,0 +1,23 @@
+"PR1"{=
+	country="PR1"
+	2={
+		first_name="José Fernando"
+		family_name="Abascal y Sousa"
+		birth_date=1743.6.3
+		culture="Spanish"
+		religion="Catholic"
+		no_stats=yes
+		no_traits=yes
+		add_trait=Ruling Nobility
+		add_trait=Reformer
+		add_trait=Violent
+		add_trait=Aloof
+		add_gold=100
+		add_popularity=50
+		c:PR1={
+			set_as_ruler=char:2
+		}
+		dna="GPMY8wAxhHnt5O3kAooCigJwAnACkgKSA5cDmwKYApgChAKEAn8CfwJ3AncCFQKLAoUChQJnAmcCgQKBApECkQJnAmcCbgJuApQClAJmAmYCbgJuAgACawL9Am8CdAJ6AloCdQIAAo8CaAJoApICkwJ1AnUCaQJpA5wDnAFYAVgCcgJyAo4CjgJpAmkCeQJ5Av0CggBPADQChQJ4ApICegKHAocCGQJxAoACgAK3AmoC6QJrAqUCfgKZApkBTgFOAooCigJjAmcCyQKWAVEBUQJqAmoCmAKYAsECdgLfAoYClwKXBOUE5QQ1BHQAfwB/AVQBVABwAHAArQCtADoAOgF/AX8BKQEpAMEAwQAAArkAEAAQAXgBeABpAH8AEwATAR8BHwK/Ar8BIQEhAuEC4QA8ADwDQQNBAEgASAB/AH8BWAFYAsICwgEaARoAQgBCAV4BXgKFAoUALAAsAwIDZABPAG4DLQMtALsAuwBSAFIBnwmZAH8AfwT1BPUBRgFOAAAAYAUjBSMSzxGmCI4eMAAAAAAAAAAAAAAAAA=="
+	}
+
+}

@@ -1,0 +1,34 @@
+"BRZ"{=
+	country="BRZ"
+	0={
+		first_name="Pedro III"
+		family_name="Bragança"
+		birth_date=1717.7.5
+		death_date=1786.05.25
+		culture="Portuguese"
+		religion="Catholic"
+		no_stats=yes
+		no_traits=yes
+		add_gold=100
+		add_popularity=50
+		dna="ISsT8b1uvW6/0b/RAnMCcwJ/An8CiwKLAoECgQJ8AnwCggKCAoQChAJpAmkCfgJ+AoUChQKNAo0DqQOpApcClwJ0AnQCdgJ2An8CfwKOAo4CeQJ5AnkCeQCnADICdgJ2AmsCawJpAmkBVgFWApoCdQKXApcCigKKApMCkwJ+An4CaAJoAoICggJwAnACcwJzAm0CbQJtAm0CiwKLApMCkwJrAmsCawJrAmsCawKTApMCfQJ9Am8CbwKMAowCggKCAmsCawJ3AncBWgFaAoYChgKYApgCcQJxAm4CbgKPAo8CeQJ5AooCigS2AmgAxADEAJ4AngFRAVEASQBJALsAuwCYAJgA+wD7AG4AbgF2AXYAFQAVAOsA6wB/AH8AKQApASEBIQC+AL4AeQB5AL4AvgESARICHQIdAGIAYgB/AH8AlgCWAssCywD6APoAUwBTAHkAeQMHAwcAqACoAwADFQEAAXcDpwNuAEwATASdBJ0BEAGVAH8AfwHDAcMMABQqAEEAQQUABeYR5BHkHgAedgAAAAAAAAAAAAAAAA=="
+	}
+
+	1={
+		first_name="Maria Francisca"
+		family = "c:BRZ.fam:Bragança"
+		birth_date=1734.12.17
+		culture="Portuguese"
+		religion="Catholic"
+		female=yes
+		no_stats=yes
+		no_traits=yes
+		add_gold=100
+		add_popularity=50
+		c:BRZ={
+			set_as_ruler=char:1
+		}
+		dna="CewJ7P8mrn3F/MX8AmwCbAJCAoUCjAKMAq4CiAEFAVkCjQKNAnUCfgJ2AnYDmwObAVMBUwJqAmoCAAKAAzkDrAKMAocCegJ6AoICggE9AV0CagJqAVEBUQL/ApcCRgKRAiYChwKKAnEEtQS1ApcClwKJAm4ClgKWAmkCaQKGAoYCiwKLAo4CjgKOAoAEywTLAz8DsgJsAmwCrgJ4AlcCigI0Ao8COAJzAnMCcwIjAnwBgAFbBGcClQJsAmwClgKWAuYChAKMAowCNQKWAoQChAJnAoUCiAKIA3QDpwRSBMECiAKIA6sDqwT/BAQBEwCJAgAC4gA6ADoAWABYAL8AvwBxAHEA+QD5ANYA1gBEAEQBNAE0AX8BfwB/AH8AXABcAQgBCAATAXgAAwADATkBOQDEAMQAAwADALwAvAB/AH8AkwCTAKIAogLWAtYAzgDOAGIAYgMAAywBBgEGAMQAxAA7ADsAaALnAMUAxQGDALAA0ADQAH8AfwENAQ0JJAkbAHQA3QW1BbUSVAdYCKsIqwAAAAAAAAAAAAAAAA=="
+	}
+
+}
