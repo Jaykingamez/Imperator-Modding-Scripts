@@ -3,6 +3,7 @@
 	4={
 		first_name="María Concepción Loperena"
 		family = "c:VLL.fam:Fernández de Castro"
+		nickname="La Heroína"
 		birth_date=1775.1.1
 		culture="colombian"
 		religion="catholic"

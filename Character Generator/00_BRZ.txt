@@ -3,6 +3,7 @@
 	0={
 		first_name="Pedro III"
 		family_name="Bragança"
+		nickname="Builder"
 		birth_date=1717.7.5
 		death_date=1786.05.25
 		culture="portuguese"
@@ -15,6 +16,7 @@
 	1={
 		first_name="Maria Francisca"
 		family = "c:BRZ.fam:Bragança"
+		nickname="Pious"
 		birth_date=1734.12.17
 		culture="portuguese"
 		religion="catholic"

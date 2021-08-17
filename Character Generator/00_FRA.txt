@@ -3,6 +3,7 @@
 	3={
 		first_name="Charles Maurice"
 		family_name="Talleyrand-Périgord"
+		nickname="Traitor"
 		birth_date=1754.2.2
 		culture="french"
 		religion="catholic"

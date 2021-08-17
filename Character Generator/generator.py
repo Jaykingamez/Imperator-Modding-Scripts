@@ -54,6 +54,8 @@ class Generator:
             characters.write("\t"*2 + "family = " +  '\"' + row["Family"] + '\"' + "\n")
         else:
             characters.write("\t"*2 + "family_name=" +  '\"' + row["Family Name"] + '\"' + "\n")
+        if(row["Nickname"] != ""):
+            characters.write("\t"*2 + "nickname=" +  '\"' + row["Nickname"]+ '\"' + "\n")
 
     
     def date(self, row, characters):
