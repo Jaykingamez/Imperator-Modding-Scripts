@@ -1,12 +1,11 @@
-"PR1"{=
+"PR1"={
 	country="PR1"
 	2={
 		first_name="José Fernando"
 		family_name="Abascal y Sousa"
 		birth_date=1743.6.3
-		culture="Spanish"
-		religion="Catholic"
-		no_stats=yes
+		culture="spanish"
+		religion="catholic"
 		no_traits=yes
 		add_trait=Ruling Nobility
 		add_trait=Reformer

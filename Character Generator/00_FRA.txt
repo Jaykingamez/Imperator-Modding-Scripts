@@ -1,13 +1,11 @@
-"FRA"{=
+"FRA"={
 	country="FRA"
 	3={
 		first_name="Charles Maurice"
 		family_name="Talleyrand-Périgord"
 		birth_date=1754.2.2
-		culture="French"
-		religion="Catholic"
-		no_stats=yes
-		no_traits=yes
+		culture="french"
+		religion="catholic"
 		add_gold=100
 		add_popularity=50
 		c:FRA={

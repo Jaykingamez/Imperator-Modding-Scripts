@@ -41,7 +41,7 @@ class Generator:
     def new_country(self, row, characters):
         """Define a new country tag to generate characters for"""
         
-        characters.write('\"' + row[TAG] + '\"' + '{=' + "\n")
+        characters.write('\"' + row[TAG] + '\"' + '={' + "\n")
         characters.write("\t" + "country=" + '\"' + row[TAG] + '\"' +  "\n")
 
     
@@ -67,8 +67,8 @@ class Generator:
     def culture_religion(self, row, characters):
         """Define culture and religion, as well as point out if character is female"""
         
-        characters.write("\t"*2 + "culture=" +  '\"' + row["Culture"] + '\"' + "\n")
-        characters.write("\t"*2 + "religion=" +  '\"' + row["Religion"] + '\"' + "\n")
+        characters.write("\t"*2 + "culture=" +  '\"' + row["Culture"].lower() + '\"' + "\n")
+        characters.write("\t"*2 + "religion=" +  '\"' + row["Religion"].lower() + '\"' + "\n")
         if(row["Female"]):
             characters.write("\t"*2 + "female=yes" + "\n")
             
@@ -83,8 +83,7 @@ class Generator:
             characters.write("\t"*2 + "add_finesse=" + row["Finesse"] + "\n")
         if(row["Zeal"] != ""):
             characters.write("\t"*2 + "add_zeal=" + row["Zeal"] + "\n")
-        if(row["Martial"] != "" and row["Charisma"] != "" and
-           row["Finesse"] != "" and row["Zeal"] != ""):
+        if(row["Martial"] != "" and row["Charisma"] != "" and row["Finesse"] != "" and row["Zeal"] != ""):
             characters.write("\t"*2 + "no_stats=yes" + "\n")
 
         
@@ -150,6 +149,8 @@ class Generator:
         
         characters.write("\t" + "}" + "\n")
         characters.write("\n")
+
+Generator()
 
             
         
