@@ -9,166 +9,138 @@ ID = "CharacterID"
 class Generator:
     
     def __init__(self):
-        client = gspread.service_account()
+        client = gspread.service_account(filename="service_account.json")
         sheet = client.open(SHEET_NAME).sheet1
         data = sheet.get_all_records()
         self.df= pandas.DataFrame(data)
         self.iterate()
 
     def iterate(self):
-        tag = None
-        characters = None
+        tag = None # track whether the same country file is being edited
+        self.characters = None
         for index, row in self.df.iterrows():
-            if (tag != row[TAG] or tag == None):
-                tag = row[TAG]
-                if (characters != None):
-                    characters.write("}") #close the country tag
-                    characters.close()
-                characters = open("00_"+ row[TAG] + ".txt", "w", encoding="utf-8")
-                self.new_country(row, characters)
-            self.name(row, characters)
-            self.date(row, characters)
-            self.culture_religion(row, characters)
-            self.stats(row, characters)
-            self.traits(row, characters)
-            self.gold_popularity_prominence(row, characters)
-            self.family(row, characters)
-            self.rulership(row, characters)
-            self.dna(row, characters)
-            self.closing(row, characters)
+            self.row = row
+            if (tag != self.row[TAG] or tag == None):
+                tag = self.row[TAG]
+                if (self.characters != None):
+                    self.characters.write("}") #close the country tag
+                    self.characters.close()
+                self.characters = open("00_"+ self.row[TAG] + ".txt", "w", encoding="utf-8")
+                self.new_country()
+            self.name()
+            self.date()
+            self.culture_religion()
+            self.stats()
+            self.traits()
+            self.gold_popularity_prominence()
+            self.family()
+            self.rulership()
+            self.dna()
+            self.closing()
 
-    
-    def new_country(self, row, characters):
-        """Define a new country tag to generate characters for"""
+    def new_country(self):
+        """Define a new country tag to generate self.characters for"""
         
-        characters.write('\"' + row[TAG] + '\"' + '={' + "\n")
-        characters.write("\t" + "country=" + '\"' + row[TAG] + '\"' +  "\n")
+        self.characters.write('\"' + self.row[TAG] + '\"' + '={' + "\n")
+        self.characters.write("\t" + "country=" + '\"' + self.row[TAG] + '\"' +  "\n")
 
-    
-    def name(self, row, characters):
+    def name(self):
         """Define id and full name of character"""
         
-        characters.write("\t" + str(row[ID]) + "={" + "\n")
-        characters.write("\t"*2 + "first_name=" +  '\"' + row["First Name"] + '\"' + "\n")
-        if(row["Family"] != ""):
-            characters.write("\t"*2 + "family = " +  '\"' + row["Family"] + '\"' + "\n")
+        self.characters.write("\t" + str(self.row[ID]) + "={" + "\n")
+        self.characters.write("\t"*2 + "first_name=" +  '\"' + self.row["First Name"] + '\"' + "\n")
+        if(self.row["Family"] != ""):
+            self.characters.write("\t"*2 + "family = " +  '\"' + self.row["Family"] + '\"' + "\n")
         else:
-            characters.write("\t"*2 + "family_name=" +  '\"' + row["Family Name"] + '\"' + "\n")
-        if(row["Nickname"] != ""):
-            characters.write("\t"*2 + "nickname=" +  '\"' + row["Nickname"]+ '\"' + "\n")
+            self.characters.write("\t"*2 + "family_name=" +  '\"' + self.row["Family Name"] + '\"' + "\n")
+        if(self.row["Nickname"] != ""):
+            self.characters.write("\t"*2 + "nickname=" +  '\"' + self.row["Nickname"]+ '\"' + "\n")
 
-    
-    def date(self, row, characters):
+    def date(self):
         """Define Birth and Death dates of character"""
         
-        characters.write("\t"*2 + "birth_date=" + row["Birth Date"] + "\n")
-        if(row["Death Date"]):
-            characters.write("\t"*2 + "death_date=" + row["Death Date"] + "\n")
+        self.characters.write("\t"*2 + "birth_date=" + self.row["Birth Date"] + "\n")
+        if(self.row["Death Date"]):
+            self.characters.write("\t"*2 + "death_date=" + self.row["Death Date"] + "\n")
 
-    
-    def culture_religion(self, row, characters):
+    def culture_religion(self):
         """Define culture and religion, as well as point out if character is female"""
         
-        characters.write("\t"*2 + "culture=" +  '\"' + row["Culture"].lower() + '\"' + "\n")
-        characters.write("\t"*2 + "religion=" +  '\"' + row["Religion"].lower() + '\"' + "\n")
-        if(row["Female"]):
-            characters.write("\t"*2 + "female=yes" + "\n")
+        self.characters.write("\t"*2 + "culture=" +  '\"' + self.row["Culture"].lower() + '\"' + "\n")
+        self.characters.write("\t"*2 + "religion=" +  '\"' + self.row["Religion"].lower() + '\"' + "\n")
+        if(self.row["Female"]):
+            self.characters.write("\t"*2 + "female=yes" + "\n")
             
-    def stats(self, row, characters):
+    def stats(self):
         """Define Martial, Charisma, Finesse and Zeal stats for character"""
     
-        if(row["Martial"] != ""):
-            characters.write("\t"*2 + "add_martial=" + row["Martial"] + "\n")
-        if(row["Charisma"] != ""):
-            characters.write("\t"*2 + "add_charisma=" + row["Charisma"] + "\n")
-        if(row["Finesse"] != ""):
-            characters.write("\t"*2 + "add_finesse=" + row["Finesse"] + "\n")
-        if(row["Zeal"] != ""):
-            characters.write("\t"*2 + "add_zeal=" + row["Zeal"] + "\n")
-        if(row["Martial"] != "" and row["Charisma"] != "" and row["Finesse"] != "" and row["Zeal"] != ""):
-            characters.write("\t"*2 + "no_stats=yes" + "\n")
+        if(self.row["Martial"] != ""):
+            self.characters.write("\t"*2 + "add_martial=" + self.row["Martial"] + "\n")
+        if(self.row["Charisma"] != ""):
+            self.characters.write("\t"*2 + "add_charisma=" + self.row["Charisma"] + "\n")
+        if(self.row["Finesse"] != ""):
+            self.characters.write("\t"*2 + "add_finesse=" + self.row["Finesse"] + "\n")
+        if(self.row["Zeal"] != ""):
+            self.characters.write("\t"*2 + "add_zeal=" + self.row["Zeal"] + "\n")
+        if(self.row["Martial"] != "" and self.row["Charisma"] != "" and self.row["Finesse"] != "" and self.row["Zeal"] != ""):
+            self.characters.write("\t"*2 + "no_stats=yes" + "\n")
 
-        
-            
-
-    def traits(self, row, characters):
+    def traits(self):
         """Add traits if there are any, else let the game generate"""
         
-        if(row["Traits"] != ""):
-            characters.write("\t"*2 + "no_traits=yes" + "\n")
-            trait_list = row["Traits"].split(",")
+        if(self.row["Traits"] != ""):
+            self.characters.write("\t"*2 + "no_traits=yes" + "\n")
+            trait_list = self.row["Traits"].split(",")
             for trait in trait_list:
-                characters.write("\t"*2 + "add_trait=" + trait.strip() + "\n")
-                
-            
+                self.characters.write("\t"*2 + "add_trait=" + trait.strip() + "\n")
 
-
-    def gold_popularity_prominence(self, row, characters):
+    def gold_popularity_prominence(self):
         """Define gold, popularity and prominence"""
          
-        if(row["Gold"] != ""):
-            characters.write("\t"*2 + "add_gold=" + row["Gold"] + "\n")
+        if(self.row["Gold"] != ""):
+            self.characters.write("\t"*2 + "add_gold=" + self.row["Gold"] + "\n")
         else:
-            characters.write("\t"*2 + "add_gold=100" + "\n")
-        if(row["Popularity"] != ""):
-            characters.write("\t"*2 + "add_popularity=" + row["Popularity"] + "\n")
+            self.characters.write("\t"*2 + "add_gold=100" + "\n")
+        if(self.row["Popularity"] != ""):
+            self.characters.write("\t"*2 + "add_popularity=" + self.row["Popularity"] + "\n")
         else:
-            characters.write("\t"*2 + "add_popularity=50" + "\n")
+            self.characters.write("\t"*2 + "add_popularity=50" + "\n")
 
-        if(row["Prominence"] != ""):
-            characters.write("\t"*2 + "add_prominence=" + row["Prominence"] + "\n")
+        if(self.row["Prominence"] != ""):
+            self.characters.write("\t"*2 + "add_prominence=" + self.row["Prominence"] + "\n")
 
-    def family(self, row, characters):
+    def family(self):
         """Define Paternal and Maternal relationship"""
         
-        if(row["Father"] != ""):
-            characters.write("\t"*2 + "father=char:" + row["Father"] + "\n")
+        if(self.row["Father"] != ""):
+            self.characters.write("\t"*2 + "father=char:" + self.row["Father"] + "\n")
 
-        if(row["Mother"] != ""):
-            characters.write("\t"*2 + "mother=char:" + row["Mother"] + "\n")
+        if(self.row["Mother"] != ""):
+            self.characters.write("\t"*2 + "mother=char:" + self.row["Mother"] + "\n")
 
-    def rulership(self, row, characters):
+    def rulership(self):
         """Define Rulers or Corulers"""
     
-        if(row["Ruler"].strip() == "yes"):
-            characters.write("\t"*2 + "c:" + row[TAG] + "={" + "\n")
-            characters.write("\t"*3 + "set_as_ruler=char:" + str(row[ID]) + "\n")
-            characters.write("\t"*2 + "}" + "\n")
+        if(self.row["Ruler"].strip() == "yes"):
+            self.characters.write("\t"*2 + "c:" + self.row[TAG] + "={" + "\n")
+            self.characters.write("\t"*3 + "set_as_ruler=char:" + str(self.row[ID]) + "\n")
+            self.characters.write("\t"*2 + "}" + "\n")
 
-        if(row["Coruler"].strip() == "yes"):
-            characters.write("\t"*2 + "c:" + row[TAG] + "={" + "\n")
-            characters.write("\t"*3 + "set_as_coruler=char:" + str(row[ID]) + "\n")
-            characters.write("\t"*2 + "}" + "\n")
+        if(self.row["Coruler"].strip() == "yes"):
+            self.characters.write("\t"*2 + "c:" + self.row[TAG] + "={" + "\n")
+            self.characters.write("\t"*3 + "set_as_coruler=char:" + str(self.row[ID]) + "\n")
+            self.characters.write("\t"*2 + "}" + "\n")
 
-    def dna(self, row, characters):
+    def dna(self):
         """Define DNA"""
         
-        if(row["DNA"] != ""):
-            characters.write("\t"*2 + "dna=" +  '\"' + row["DNA"] + '\"' + "\n")
+        if(self.row["DNA"] != ""):
+            self.characters.write("\t"*2 + "dna=" +  '\"' + self.row["DNA"] + '\"' + "\n")
 
-    def closing(self, row, characters):
+    def closing(self):
         """End character declaration"""
         
-        characters.write("\t" + "}" + "\n")
-        characters.write("\n")
+        self.characters.write("\t" + "}" + "\n")
+        self.characters.write("\n")
 
 Generator()
-
-            
-        
-            
-            
-            
-                
-   
-
-        
-        
-        
-        
-        
-        
-        
-                         
-        
-
