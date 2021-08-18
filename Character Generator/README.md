@@ -6,7 +6,6 @@ However, if the data isn't even formatted properly on the Google Sheets, this co
 
 Sample can be viewed [here](https://docs.google.com/spreadsheets/d/1lnTmQbcQQCz64Y9r7yNjJJfPv7kBKXMFfR7JnM8OFb4/edit?usp=sharing)
 
-Also, [instructions](https://docs.gspread.org/en/latest/oauth2.html) have to be followed.
-Credentials.json has to be stored %APPDATA%\gspread\service_account.json for Windows users. 
+Credentials.json has to be stored in the same directory
 
 ### Drop me an issue if you're interested in obtaining the file. 
