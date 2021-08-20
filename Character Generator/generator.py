@@ -1,9 +1,14 @@
 import gspread
 import pandas
+import configparser
 
-SHEET_NAME = "character sheet sample"
-TAG = "Country Tag"
-ID = "CharacterID"
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+
+SHEET_NAME = config["Google Sheet"]["sheet_name"]
+TAG = config["Google Sheet"]["column_tag"]
+ID = config["Google Sheet"]["column_id"]
 
 # Stored file in Windows for Bots https://docs.gspread.org/en/latest/oauth2.html
 class Generator:
